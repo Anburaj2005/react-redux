@@ -1,17 +1,17 @@
 import './App.css';
 import React from 'react';
 import {Provider}from "react-redux" 
-import Cakecontainers from './Component/cakecontainers';
+import Cakecontainer from './Component/Cakecontainer';
 import store from './redux/store'
+import Hookscakecontainer from './Component/Hookscakecontainer';
 function App() {
   return (
     <Provider store={store}>
     <div className="App">
-     <Cakecontainers/>
-
+     <Cakecontainer/>
+<Hookscakecontainer/>
     </div>
-  
-    </Provider>
+  </Provider>
   );
 }
 
